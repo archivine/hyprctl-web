@@ -4,8 +4,8 @@ const {execSync} = require("child_process");
 const output = require('./output');
 
 const app = express();
-const port = 6969
-const ip = "192.168.8.108"
+const port = 2137
+const ip = "" //ur ip here
 
 // ctl/dispatch?dispatcher=<dispatcher>&arg=<arg>
 app.get('/ctl/dispatch', (req, res) => {
