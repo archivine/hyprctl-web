@@ -35,15 +35,6 @@ app.get('/ctl/keyword', (req, res) => {
 app.get('/ctl/reload', (req, res) => {
 
     execSync(`hyprctl reload`);
-    output.log(`received » reload: ${keyword} <~ ${arg}`);
-    output.send(res, "ok");
-
-})
-
-// ctl/reload
-app.get('/ctl/reload', (req, res) => {
-
-    execSync(`hyprctl reload`);
     output.log(`received » reload`);
     output.send(res, "ok");
 
